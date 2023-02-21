@@ -1,0 +1,72 @@
+/**********************/
+/*****   Scroll   *****/
+/**********************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/***************************************/
+/*****   BUTTONS FOCUS AND HOVER   *****/
+/***************************************/
+
+.main__section--color:hover, 
+.main__section--trans:hover,
+.button:hover,
+.FormBox__button:hover {
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: none;
+}
+
+.main__section--color:focus, 
+.main__section--trans:focus,
+.button:focus,
+.FormBox__button:focus {
+    background-color: var(--focus);
+    color: var(--c1);
+    border: 0px;
+}
+
+.main__section--color:visited {
+    color: var(--c6);
+    background: var(--c4);
+}
+
+.main__section--trans:visited {
+    background: var(--c1);
+    border: 1px solid var(--c-trans);
+    color: var(--c6);
+}
+
+.button:visited {
+    background: var(--c5);
+}
+
+.FormBox__button:visited {
+    background: var(--c1);
+}
+
+/*****************************/
+/*****   SIDE ELEMENTS   *****/
+/*****************************/
+
+.PorqueElegirnos__PEbox:hover, 
+.OurServices__TestAutomatizado:hover, 
+.OurServices__TestFuncional:hover, 
+.OurServices__TestLoadStressPerformance:hover {
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+} 
+
+
+@keyframes scale {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.05;
+    }
+}

@@ -1,0 +1,515 @@
+* {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --c1: #0d192b;
+    --c2: #0c5149;
+    --c3: #0a8967;
+    --c4: #09c184;
+    --c5: #07f9a2;
+    --c6: #fcfef5;
+    --c-trans: #afb7a0;
+    --focus: rgb(255, 255, 87);
+    }
+
+.page, .page__inner { 
+    width: 100%;
+    height: auto;
+}
+
+/**********************/
+/*****   HEADER   *****/
+/**********************/
+
+.header {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--c1);
+    position: fixed;
+}
+
+.logo, .logo__img {
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+}
+
+.main {
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+}
+
+.main__section, .main__section a {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--c6);
+}
+
+.button {
+    border-radius: 10px;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.main__section--color {
+    color: var(--c6);
+    background: var(--c4);
+}
+
+.main__section--trans {
+    background: var(--c1);
+    border: 1px solid var(--c-trans);
+    color: var(--c6);
+}
+
+.main__section--trans, .main__section--color {
+    border-radius: 10px;
+    justify-content: center;
+    padding: 5px 15px 5px 15px;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/********************/
+/*****   HERO   *****/
+/********************/
+
+.hero {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(12,81,73,1) 51%);}
+
+.hero_block, .block {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.block__text, .block__img {
+    width: 40%;
+    height: 80%;
+}
+
+.title, .text {
+    color: var(--c-trans);
+}
+
+.title, .OurServices__Title, .PorqueElegirnos__Title {
+    font-size: 44px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+
+.text {
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(resources/banner.svg);
+}
+
+.button {
+    width: 20%;
+    border-radius: 10px;
+    background: var(--c5);
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+}
+
+.button__text {
+    color: var(--c1);
+}
+
+
+
+/****************************/
+/*****   Our Services   *****/
+/****************************/
+
+.OurServices {
+    width: 100%;
+    height: auto;
+    background-color: var(--c3);
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.OurServices--Inner {
+    width: 80%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.OurServices__Title--Blue {
+    color: var(--c1);
+    width: 100%;
+}
+
+.OurServices__Subtitle {
+    color: var(--c2);
+    width: 100%;
+}
+
+.TestAutomatizado, .TestFuncional, .TestLoadStressPerformance {
+    width: 100%;
+    border-radius: 10px;
+    background: var(--c4);
+    justify-content: space-evenly;
+}
+
+.TestFuncional, .TestLoadStressPerformance { 
+    width: 49%;    
+}
+
+.TestAutomatizado__Title, .TestFuncional__Title, .TestLoadStressPerfomance__Title {
+    background-color: var(--c1);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    color: var(--c6);
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.TestAutomatizado__Text, .TestFuncional__Text, .TestLoadStressPerfomance__Text {
+    padding: 20px;
+    width: 70%;
+    align-items: center;
+}
+
+.TestFuncional__Text, .TestLoadStressPerfomance__Text {
+    padding: 20px 0px 20px 0px;
+}
+
+.TestAutomatizado__Img, .TestFuncional__Img, .TestLoadStressPerfomance__Img {
+    width: 100px;
+    height: auto;
+    margin: 25px;
+    background-size: 100px;
+}
+
+/********************************/
+/*****   PORQUE ELEGIRNOS   *****/
+/********************************/
+
+.PorqueElegirnos {
+    width: 100%;
+    justify-content: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(101deg, rgba(0,0,0,1) 0%, rgba(12,81,73,1) 0%, rgba(13,25,43,1) 100%);    padding-bottom: 50px;
+}
+
+.PorqueElegirnos__Inner {
+    width: 80%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.PorqueElegirnos__Title {
+    width: 100%;
+    justify-content: center;
+    color: var(--c6);
+    padding-bottom: 4rem;
+}
+
+.PorqueElegirnos__PEbox, .PEbox {
+    width: 250px;
+    height: 250px;
+    flex-direction: row;
+    text-align: -webkit-right;
+    justify-content: center;
+    background: var(--c1);
+    border-radius: 10px;
+    padding: 20px 10px;
+    border: 2px solid white;
+}
+
+.PEbox__title, .PEbox__text {
+    text-align: center;
+}
+
+.PEbox__title {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--c6);
+}
+
+.PEbox__text {
+    text-transform: lowercase;
+    color: var(--c-trans);
+}
+
+.PEbox__BoxImg, .BoxImg{
+    width: 100%;
+    justify-content: center;
+}
+.BoxImg__Img {
+    width: 100px;
+    height: 100px;
+}
+
+/************************/
+/*****   CONTACTO   *****/
+/************************/
+
+.contact {
+    width: 100%;
+    background: radial-gradient(circle, rgba(12,81,64,1) 2%, rgba(13,25,43,1) 100%);    justify-content: space-evenly;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    color: var(--c6);
+}
+
+.contact__colbox, .colbox, .form {
+    width: 25%;
+    height: auto;
+}
+
+/******************************/
+/*****   CONTACTO - FORM  *****/
+/******************************/
+
+.form__ul, .FormUl {
+    flex-direction: column;
+    width: 100%;
+}
+
+.FormUl__box, .FormBox {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--c1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px 2px 2px 2px;
+}
+
+.FormUl__box--title, .FormBox--title, .Info__Title {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px 2px 2px 2px;
+}
+
+.FormBox__name, .FormBox__email, .FormBox__messaje {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.FormBox__messaje {
+    height: 150px;
+    resize: none;
+}
+
+.FormBox__button {
+    width: 100%;
+    border-radius: 10px;
+    background: var(--c1);
+    color: var(--c6);
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+}
+
+.FormUl__box--button, .FormBox--button {
+    width: 30%;
+}
+
+/******************************/
+/*****   CONTACTO - MAP  *****/
+/******************************/
+
+.colbox_map {
+    align-items: center;
+}
+
+/******************************/
+/*****   CONTACTO - INFO  *****/
+/******************************/
+
+.Info {
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenido {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Contenido__direccion, .Contenido__tel, .Contenido__email, .Contenido__redes {
+    flex-direction: row;
+    gap: 15px;
+}
+
+.Contenido__redes {
+    margin-top: 10px;
+}
+
+/**********************/
+/*****   FOOTER   *****/
+/**********************/
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background: var(--c1);
+    justify-content: center;
+    align-content: center;
+}
+
+.footer__inner {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__text {
+    color: var(--c6);
+    font: small-caption;
+}
+
+.footer__tabla {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+}
+
+.tabla__renglon {
+    flex-direction: row;
+    gap: 5px;
+}
+
+/*********************************/
+/*****   LOGIN AND REGISTER  *****/
+/*********************************/
+
+.loginRegister {
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--c2);
+    width: 100%;
+    height: 500px;
+}
+
+.login__Title, .register__Title {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px 2px 2px 2px;
+    
+}
+
+.login, .register{
+    width: 40%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 2px solid var(--c1);
+}
+
+.register {
+    background: var(--c3);
+}
+
+.login {
+    background: var(--c1);
+}
+
+.login__inner, .register__inner{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.loginTable__Inner, .registerTable__Inner {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 1.5rem;
+}
+
+.loginTable__txtEmail, 
+.loginTable__txtPassword,
+.loginTable__questions,
+.registerTable__txtEmail, 
+.registerTable__txtPassword,
+.registerTable__questions {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.text-email,
+.text-password {
+    width: 100%;
+    background: white;
+    border-radius: 1rem;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.text-email__container,
+.text-password__container {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.text-email__txt,
+.text-password__txt {
+    width: 400px;
+}
+
+.loginTable__questions, .registerTable__questions {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.loginTable__questions--text {
+    font-size: 12px;
+    color: var(--c-trans);
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.login__btnLogIn, .register__btnLogIn {
+    width: 20%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    background: var(--c5);
+    color: var(--c1);
+    font-weight: bold;
+}

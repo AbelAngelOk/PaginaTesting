@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="CSSanimations.css" rel="stylesheet" type="text/css">
+
+    <!-- font-awesome -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+
+</head>
+<body class="page">
+    <div class="page__inner">
+        <header id="header" class="header">
+            <a href="" class="header__logo logo"> 
+                <img src="resources/zorro.png" class="logo__img">
+            </a>
+            <ul class="header__main main">
+                <li class="main__section"> <a href="#hero">Inicio</a></li>
+                <li class="main__section"> <a href="#About">Servicios</a></li>
+                <li class="main__section"> <a href="#Cards">Elegirnos</a></li>
+                <li class="main__section"> <a href="#Contact">Contacto</a></li>
+                <li><a href="#Login" class="main__section--color">Ingresar</a></li>
+                <li><a href="#Register" class="main__section--trans">Registrarse</a></li>
+            </ul>
+        </header>
+        <section id="hero" class="hero">
+            <ul class="hero__block block">
+                <li class="block__text">
+                    <h1 class="title">Testing, DevOps y Calidad de Software</h1>
+                    <p class="text">CrowdAr ayuda a equipos de desarrollo a mejorar la calidad del software a través de servicios de Testing, Test Automatizado, Performance y Seguridad con su propia red de profesionales calificados utilizando metodologías ágiles y prácticas de DevOps
+                    </p>
+                    <a href="www.google.com" class="button button__text">Ver más</a>
+                </li>
+                <li class="block__img">
+                    <img class="img">
+                </li>
+            </ul>
+        </section>
+        <section id="About" class="OurServices">
+            <div class="OurServices--Inner">
+                <div class="OurServices__Title">
+                    <h1 class="OurServices__Title--Blue">Servicios de Testing</h1>
+                </div>           
+                <div class="OurServices__Subtitle">
+                    <a>Nuestra ambición es ser el proveedor líder de Testing de punta a punta</a>
+                </div>
+                <div class="OurServices__TestAutomatizado TestAutomatizado">
+                    <div class="TestAutomatizado__Title">Test Automatizado</div>
+                    <div> <img src="resources/automation.png" class="TestAutomatizado__Img"> </div>
+                    <div class="TestAutomatizado__Text"> Brindamos servicios de Testing Automatizado, desde la concepción hasta el deploy de la solución. Para eso desarrollamos Lippia ® Test Automation, un framework que combina las herramientas Open Source más utilizadas, y multi-plataforma que permite automatizar aplicaciones Web, Mobile, Desktop, APIs. Basado en containers y cloud ready, permite ahorrar hasta 6 meses de trabajo en implementación de un framework desde cero. Lippia.io
+                    </div>
+                </div>
+                <div class="OurServices__TestFuncional TestFuncional">
+                    <div class="TestFuncional__Title">TESTING FUNCIONAL</div>
+                    <div> <img src="resources/functional.png" class="TestFuncional__Img"> </div>
+                    <div class="TestFuncional__Text">Nuestro equipo de testers profesionales gestionado con metodologías ágiles resolverán cualquier necesidad de testing exploratorio, agile testing, o pruebas de aceptación.
+                    </div>
+                </div>
+                <div class="OurServices__TestLoadStressPerformance TestLoadStressPerformance">
+                    <div class="TestLoadStressPerfomance__Title">LOAD, STRESS & PERFORMANCE</div>
+                    <div><img src="resources/performance.png" class="TestLoadStressPerfomance__Img"></div>
+                    <div class="TestLoadStressPerfomance__Text">Prueba los límites de tu Aplicación para asegurarte que soportará el volumen de usuarios previstos antes del lanzamiento en Producción.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Cards" class="PorqueElegirnos">
+            <div class="PorqueElegirnos__Inner">
+                <div class="PorqueElegirnos__Title">
+                    <h1 class="">Porque Elegirnos</h1>
+                </div>
+                <div class="PorqueElegirnos__PEbox PEbox">
+                    <div class="PEbox__BoxImg BoxImg"> 
+                        <img src="resources/porqueNosotros-price.png" class="BoxImg__Img"> 
+                    </div>
+                    <div class="PEbox__title">Precios Competitivos</div>
+                    <div class="PEbox__text">La mejor relacion calidad-precio</div>
+                </div>
+                <div class="PorqueElegirnos__PEbox PEbox">
+                    <div class="PEbox__BoxImg BoxImg"> 
+                        <div class="PEbox__img"> <img src="resources/porqueNosotros-contract.png" class="BoxImg__Img"> </div>
+                    </div>
+                    <div class="PEbox__title">Contratos simples</div>
+                    <div class="PEbox__text">contratos flexible, claros y rapidos</div>
+                </div>
+                <div class="PorqueElegirnos__PEbox PEbox">
+                    <div class="PEbox__BoxImg BoxImg"> 
+                        <div> <img src="resources/porqueNosotros-value.png" class="BoxImg__Img"> </div>
+                    </div>
+                    <div class="PEbox__title">Valor Organizacional</div>
+                    <div class="PEbox__text">Responsabilidad, compromiso, proactividad son los ejes de la organizacion</div>
+                </div>
+            </div>
+        </section>
+        <section id="Contact" class="contact">
+            <form action="" method="post" class="form contact__colbox">
+                <ul class="form__ul FormUl">
+                    <li class="FormUl__box--title FormBox--title">
+                        <h2 class="FormUl__box--title FormBox--title">¿En que podemos ayudarte?</h2>
+                    </li>
+                    <li class="FormUl__box FormBox">
+                        <label for="name"></label>
+                        <input class="FormBox__name" type="text" id="name" name="user_name" placeholder="  tu nombre..." required>
+                    </li>
+                    <li class="FormUl__box FormBox">
+                        <label for="mail"></label>
+                        <input class="FormBox__email" type="email" id="mail" name="user_mail" placeholder="  tu email..." required>
+                    </li>
+                    <li class="FormUl__box FormBox">
+                        <label for="msg"></label>
+                        <textarea class="FormBox__messaje" id="msg" name="user_message" placeholder="  mensaje..." required></textarea>
+                    </li>
+                    <li class="FormUl__box--button FormBox--button">
+                        <button class="FormBox__button"> Enviar </button>
+                    </li>
+                </ul>
+            </form>
+            <div class="contact__colbox colbox">
+                <div class="colbox_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105097.4485792059!2d-58.502777837499984!3d-34.5966944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3353526257337%3A0xda93862a3e78432a!2sGlobant!5e0!3m2!1ses-419!2sar!4v1676937185000!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>             
+            <div class="contact__colbox colbox Info">
+                <ul class="Info__Contenido Contenido">
+                    <li>
+                        <h2 class="Info__Title">Ponerse en contacto</h2>
+                    </li>
+                    <li class="Contenido__direccion direccion">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>123 Street, New York, USA</p>
+                    </li>
+                    <li class="Contenido__tel tel">
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                        <p>+012 345 67890</p>
+                    </li>
+                    <li class="Contenido__email email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@example.com</p>
+                    </li>
+                    <li class="Contenido__redes">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="loginRegister">
+            <section id="Login" class="login">
+                <div class="login__inner">
+                    <table class="login__table loginTable">
+                        <ul class="loginTable__Inner">
+                            <li><h2 class="login__Title"> Iniciar Sesion</h2></li>
+                            <li class="text-email">
+                                <div class="text-email__container">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input class="text-email__txt" type="mail" placeholder="your email" required></input>
+                                </div>
+                            </li>
+                            <li class="text-password">
+                                <div class="text-password__container">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input class="text-password__txt" type="password" placeholder="your password" required></input>
+                                </div>
+                            </li>
+                            <li class="loginTable__questions">
+                                <a class="loginTable__questions--text" href="x">¿no recuerda su contraseña?</a>
+                                <a class="loginTable__questions--text" href="x">¿no está registrado?</a>
+                            </li>
+                            <li><button class="login__btnLogIn">Log In</button></li>
+                        </ul>
+                    </table>
+                </div>
+            </section>
+            <section id="Register" class="register">           
+                <div class="register__inner">
+                    <table class="register__table registerTable">
+                        <ul class="registerTable__Inner">
+                            <li><h2 class="register__Title"> Registrarse </h2></li>
+                            <li class="text-email">
+                                <div class="text-email__container">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input class="text-email__txt" type="mail" placeholder="your email" required></input>
+                                </div>
+                            </li>
+                            <li class="text-password">
+                                <div class="text-password__container">
+                                    <i class="fa-solid fa-key"></i>
+                                    <input class="text-password__txt" type="password" placeholder="your password" required></input>
+                                </div>
+                            </li>
+                            <li class="text-password">
+                                <div class="text-password__container">
+                                    <i class="fa-solid fa-key"></i>
+                                    <input class="text-password__txt" type="password" placeholder="your password repeat" required></input>
+                                </div>
+                            </li>
+                            <li class="registerTable__questions">
+                                <a class="loginTable__questions--text" href="x">¿ya se encuentra registrado?</a>
+                            </li>
+                            <li><button class="register__btnLogIn">Register</button></li>
+                        </ul>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <footer class="footer">
+            <div class="footer__inner">
+                <ul class="footer__tabla">
+                    <li class="tabla__renglon">
+                        <p class="footer__text"> Hecho con ❤️ Por
+                            <a class="footer__text" href="https://www.linkedin.com/in/abelangel96/">Abel A. Cejas</a> 
+                        </p>
+                    </li>
+                    <li class="tabla__renglon">
+                        <a class="footer__text" href="https://www.flaticon.com/free-icons/criteria" title="criteria icons">Criteria icons created by Eucalyp - Flaticon</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
