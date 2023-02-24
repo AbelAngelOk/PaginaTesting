@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="CSSanimations.css" rel="stylesheet" type="text/css">
+
+    <!-- font-awesome -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    /></head>
+<body class="page">
+    <header id="header" class="header">
+        <a href="" class="header__logo logo"> 
+            <img src="resources/zorro.png" class="logo__img">
+        </a>
+        <ul class="header__main main">
+            <li class="main__section"> <a href="#hero">Inicio</a></li>
+            <li class="main__section"> <a href="#About">Servicios</a></li>
+            <li class="main__section"> <a href="#Cards">Elegirnos</a></li>
+            <li class="main__section"> <a href="#Contact">Contacto</a></li>
+            <li><a href="login.html" class="main__section--color">Ingresar</a></li>
+            <li><a href="login.html" class="main__section--trans">Registrarse</a></li>
+        </ul>
+    </header>
+    <section class="loginRegister">
+        <section id="Login" class="login">
+            <div class="login__inner">
+                <table class="login__table loginTable">
+                    <ul class="loginTable__Inner">
+                        <li><h2 class="login__Title"> Iniciar Sesion</h2></li>
+                        <li class="text-email">
+                            <div class="text-email__container">
+                                <i class="fa-solid fa-user"></i>
+                                <input class="text-email__txt" type="mail" placeholder="your email" required></input>
+                            </div>
+                        </li>
+                        <li class="text-password">
+                            <div class="text-password__container">
+                                <i class="fa-solid fa-lock"></i>
+                                <input class="text-password__txt" type="password" placeholder="your password" required></input>
+                            </div>
+                        </li>
+                        <li class="loginTable__questions">
+                            <a class="loginTable__questions--text" href="x">¿no recuerda su contraseña?</a>
+                            <a class="loginTable__questions--text" href="x">¿no está registrado?</a>
+                        </li>
+                        <li><button class="login__btnLogIn">Log In</button></li>
+                    </ul>
+                </table>
+            </div>
+        </section>
+        <section id="Register" class="register">           
+            <div class="register__inner">
+                <table class="register__table registerTable">
+                    <ul class="registerTable__Inner">
+                        <li><h2 class="register__Title"> Registrarse </h2></li>
+                        <li class="text-email">
+                            <div class="text-email__container">
+                                <i class="fa-solid fa-user"></i>
+                                <input class="text-email__txt" type="mail" placeholder="your email" required></input>
+                            </div>
+                        </li>
+                        <li class="text-password">
+                            <div class="text-password__container">
+                                <i class="fa-solid fa-key"></i>
+                                <input class="text-password__txt" type="password" placeholder="your password" required></input>
+                            </div>
+                        </li>
+                        <li class="text-password">
+                            <div class="text-password__container">
+                                <i class="fa-solid fa-key"></i>
+                                <input class="text-password__txt" type="password" placeholder="your password repeat" required></input>
+                            </div>
+                        </li>
+                        <li class="registerTable__questions">
+                            <a class="loginTable__questions--text" href="x">¿ya se encuentra registrado?</a>
+                        </li>
+                        <li><button class="register__btnLogIn">Register</button></li>
+                    </ul>
+                </table>
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="footer__inner">
+            <ul class="footer__tabla">
+                <li class="tabla__renglon">
+                    <p class="footer__text">Hecho con ❤️ Por</p> 
+                    <a class="footer__text" href="https://www.linkedin.com/in/abelangel96/">Abel A. Cejas</a> 
+                </li>
+                <li class="tabla__renglon">
+                    <a class="footer__text" href="https://www.flaticon.com/free-icons/criteria" title="criteria icons">Criteria icons created by Eucalyp - Flaticon</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

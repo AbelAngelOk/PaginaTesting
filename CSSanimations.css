@@ -16,7 +16,7 @@ html {
 .FormBox__button:hover {
     animation-name: scale;
     animation-duration: 1s;
-    animation-iteration-count: none;
+    animation-iteration-count: 1;
 }
 
 .main__section--color:focus, 
@@ -54,19 +54,35 @@ html {
 .PorqueElegirnos__PEbox:hover, 
 .OurServices__TestAutomatizado:hover, 
 .OurServices__TestFuncional:hover, 
-.OurServices__TestLoadStressPerformance:hover {
+.OurServices__TestLoadStressPerformance:hover,
+.register:hover,
+.login:hover {
     animation-name: scale;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation-duration: 100s;
 } 
 
 
 @keyframes scale {
-    from {
+    0% {
         scale: 1;
     }
-
-    to {
+    1% {
         scale: 1.05;
+    }
+    100% {
+                scale: 1.05;
+    }
+}
+
+:root {
+    --var: false;
+}
+.register:hover {
+    --var: true;
+}
+
+.login:hover {
+    --var == true {
+
     }
 }
