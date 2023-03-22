@@ -19,28 +19,28 @@
 <body class="page">
     <div class="page__inner">
         <header id="header" class="header">
-            <a href="" class="header__logo logo"> 
-                <img src="resources/zorro.png" class="logo__img">
-            </a>
-            <ul class="header__main main">
-                <li class="main__section"> <a href="#hero">Inicio</a></li>
-                <li class="main__section"> <a href="#About">Servicios</a></li>
-                <li class="main__section"> <a href="#Cards">Elegirnos</a></li>
-                <li class="main__section"> <a href="#Contact">Contacto</a></li>
-                <li><a href="login.html" class="main__section--color">Ingresar</a></li>
-                <li><a href="login.html" class="main__section--trans">Registrarse</a></li>
-            </ul>
+                    <a href="" class="header__logo logo"> 
+                        <img src="resources/zorro.png" class="logo__img"></img>
+                    </a>
+                    <ul class="header__main main">
+                        <li class="main__section"> <a href="#hero">Inicio</a></li>
+                        <li class="main__section"> <a href="#About">Servicios</a></li>
+                        <li class="main__section"> <a href="#Cards">Elegirnos</a></li>
+                        <li class="main__section"> <a href="#Contact">Contacto</a></li>
+                        <li><a href="login.html" class="main__section--color">Ingresar</a></li>
+                        <li><a href="login.html" class="main__section--trans">Registrarse</a></li>
+                    </ul>
         </header>
         <section id="hero" class="hero">
             <ul class="hero__block block">
                 <li class="block__text">
-                    <h1 class="title">Testing, DevOps y Calidad de Software</h1>
-                    <p class="text">CrowdAr ayuda a equipos de desarrollo a mejorar la calidad del software a través de servicios de Testing, Test Automatizado, Performance y Seguridad con su propia red de profesionales calificados utilizando metodologías ágiles y prácticas de DevOps
+                    <h1 class="title">Asegure la calidad de su Software</h1>
+                    <p class="text">Ofrecemos equipos profesionales en testing de software para servicios de pruebas front-end, API desde pruebas manuales a pruebas automatizadas.
                     </p>
-                    <a href="www.google.com" class="button button__text">Ver más</a>
+                    <a href="#popup" class="button button__text">Ver más</a>
                 </li>
                 <li class="block__img">
-                    <img class="img">
+                    <div class="img"></div>
                 </li>
             </ul>
         </section>
@@ -50,24 +50,24 @@
                     <h1 class="OurServices__Title--Blue">Servicios de Testing</h1>
                 </div>           
                 <div class="OurServices__Subtitle">
-                    <a>Nuestra ambición es ser el proveedor líder de Testing de punta a punta</a>
+                    <a>Nuestra ambición es ser el proveedor de paquetes de servicio flexibles en tecnologias</a>
                 </div>
                 <div class="OurServices__TestAutomatizado TestAutomatizado">
                     <div class="TestAutomatizado__Title">Test Automatizado</div>
                     <div> <img src="resources/automation.png" class="TestAutomatizado__Img"> </div>
-                    <div class="TestAutomatizado__Text"> Brindamos servicios de Testing Automatizado, desde la concepción hasta el deploy de la solución. Para eso desarrollamos Lippia ® Test Automation, un framework que combina las herramientas Open Source más utilizadas, y multi-plataforma que permite automatizar aplicaciones Web, Mobile, Desktop, APIs. Basado en containers y cloud ready, permite ahorrar hasta 6 meses de trabajo en implementación de un framework desde cero. Lippia.io
+                    <div class="TestAutomatizado__Text"> Brindamos servicios de testing automatizados desde su concepcion hasta su deploy. Nuestro servicio cubre automatizaciones Web y API. Puede elegir alternativas tecnologicas con los lenguajes de Java, Python, JS o C# y patrones de diseño POM o Screenplay.
                     </div>
                 </div>
                 <div class="OurServices__TestFuncional TestFuncional">
-                    <div class="TestFuncional__Title">TESTING FUNCIONAL</div>
+                    <div class="TestFuncional__Title">TESTING front-end</div>
                     <div> <img src="resources/functional.png" class="TestFuncional__Img"> </div>
-                    <div class="TestFuncional__Text">Nuestro equipo de testers profesionales gestionado con metodologías ágiles resolverán cualquier necesidad de testing exploratorio, agile testing, o pruebas de aceptación.
+                    <div class="TestFuncional__Text">Contamos con equipos QA especializados en las distintas areas del servicio con el fin de hacer el mejor match para cubrir las necesidades especificas de nuestros clientes. 
                     </div>
                 </div>
                 <div class="OurServices__TestLoadStressPerformance TestLoadStressPerformance">
-                    <div class="TestLoadStressPerfomance__Title">LOAD, STRESS & PERFORMANCE</div>
+                    <div class="TestLoadStressPerfomance__Title">Testing API</div>
                     <div><img src="resources/performance.png" class="TestLoadStressPerfomance__Img"></div>
-                    <div class="TestLoadStressPerfomance__Text">Prueba los límites de tu Aplicación para asegurarte que soportará el volumen de usuarios previstos antes del lanzamiento en Producción.
+                    <div class="TestLoadStressPerfomance__Text">Probamos la estructura de tu aplicacion con especialistas API que validen el comportamiento de la interaccion de tu aplicacion con el servidor.
                     </div>
                 </div>
             </div>
@@ -101,57 +101,65 @@
             </div>
         </section>
         <section id="Contact" class="contact">
-            <form action="" method="post" class="form contact__colbox">
-                <ul class="form__ul FormUl">
-                    <li class="FormUl__box--title FormBox--title">
-                        <h2 class="FormUl__box--title FormBox--title">¿En que podemos ayudarte?</h2>
-                    </li>
-                    <li class="FormUl__box FormBox">
-                        <label for="name"></label>
-                        <input class="FormBox__name" type="text" id="name" name="user_name" placeholder="  tu nombre..." required>
-                    </li>
-                    <li class="FormUl__box FormBox">
-                        <label for="mail"></label>
-                        <input class="FormBox__email" type="email" id="mail" name="user_mail" placeholder="  tu email..." required>
-                    </li>
-                    <li class="FormUl__box FormBox">
-                        <label for="msg"></label>
-                        <textarea class="FormBox__messaje" id="msg" name="user_message" placeholder="  mensaje..." required></textarea>
-                    </li>
-                    <li class="FormUl__box--button FormBox--button">
-                        <button class="FormBox__button"> Enviar </button>
-                    </li>
-                </ul>
-            </form>
-            <div class="contact__colbox colbox">
-                <div class="colbox_map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105097.4485792059!2d-58.502777837499984!3d-34.5966944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3353526257337%3A0xda93862a3e78432a!2sGlobant!5e0!3m2!1ses-419!2sar!4v1676937185000!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>             
-            <div class="contact__colbox colbox Info">
-                <ul class="Info__Contenido Contenido">
-                    <li>
-                        <h2 class="Info__Title">Ponerse en contacto</h2>
-                    </li>
-                    <li class="Contenido__direccion direccion">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>123 Street, New York, USA</p>
-                    </li>
-                    <li class="Contenido__tel tel">
-                        <i class="fa-sharp fa-solid fa-phone"></i>
-                        <p>+012 345 67890</p>
-                    </li>
-                    <li class="Contenido__email email">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>info@example.com</p>
-                    </li>
-                    <li class="Contenido__redes">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                    </li>
-                </ul>
-            </div>
+            <ul class="Contact--inner">
+                <li>
+                    <form action="" method="post" class="form contact__colbox">
+                        <ul class="form__ul FormUl">
+                            <li class="FormUl__box--title FormBox--title">
+                                <h2 class="FormUl__box--title FormBox--title">¿En que podemos ayudarte?</h2>
+                            </li>
+                            <li class="FormUl__box FormBox">
+                                <label for="name"></label>
+                                <input class="FormBox__name" type="text" id="name" name="user_name" placeholder="  tu nombre..." required>
+                            </li>
+                            <li class="FormUl__box FormBox">
+                                <label for="mail"></label>
+                                <input class="FormBox__email" type="email" id="mail" name="user_mail" placeholder="  tu email..." required>
+                            </li>
+                            <li class="FormUl__box FormBox">
+                                <label for="msg"></label>
+                                <textarea class="FormBox__messaje" id="msg" name="user_message" placeholder="  mensaje..." required></textarea>
+                            </li>
+                            <li class="FormUl__box--button FormBox--button">
+                                <a href="#popup" class="FormBox__button"> Enviar </a>
+                            </li>
+                        </ul>
+                    </form>
+                </li>
+                <li>
+                    <div class="contact__colbox colbox">
+                        <div class="colbox_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105097.4485792059!2d-58.502777837499984!3d-34.5966944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3353526257337%3A0xda93862a3e78432a!2sGlobant!5e0!3m2!1ses-419!2sar!4v1676937185000!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>                                
+                </li>
+                <li>
+                    <div class="contact__colbox colbox Info">
+                        <ul class="Info__Contenido Contenido">
+                            <li>
+                                <h2 class="Info__Title">Ponerse en contacto</h2>
+                            </li>
+                            <li class="Contenido__direccion direccion">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>123 Street, New York, USA</p>
+                            </li>
+                            <li class="Contenido__tel tel">
+                                <i class="fa-sharp fa-solid fa-phone"></i>
+                                <p>+012 345 67890</p>
+                            </li>
+                            <li class="Contenido__email email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>info@example.com</p>
+                            </li>
+                            <li class="Contenido__redes">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </li>
+                        </ul>
+                    </div>                   
+                </li>
+            </ul>
         </section>
         <footer class="footer">
             <div class="footer__inner">
@@ -166,6 +174,13 @@
                 </ul>
             </div>
         </footer>
+        <section id="popup" class="overlay">
+            <ul id="popupBody">
+                <li class="popupBody--row"><a id="cerrar" href="#">&times;</a></li>
+                <li class="popupBody--row"><h2>Proximamente</h2></li>
+                <li class="popupBody--row"><p>Funcionalidad en desarrollo, disculpe las molestias.</p></li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>

@@ -30,7 +30,7 @@ html {
 
 .main__section--color:visited {
     color: var(--c6);
-    background: var(--c4);
+    background: var(--c2);
 }
 
 .main__section--trans:visited {
@@ -54,9 +54,9 @@ html {
 .PorqueElegirnos__PEbox:hover, 
 .OurServices__TestAutomatizado:hover, 
 .OurServices__TestFuncional:hover, 
-.OurServices__TestLoadStressPerformance:hover,
-.register:hover,
-.login:hover {
+.OurServices__TestLoadStressPerformance:hover
+/* .register:hover,
+.login:hover */ {
     animation-name: scale;
     animation-duration: 100s;
 } 
@@ -74,15 +74,18 @@ html {
     }
 }
 
+/****************************************/
+/***   DIFUMINADO DADO UNA VARIABLE   ***/
+/****************************************/
+
 :root {
-    --var: false;
+    --var: 10px;
 }
 .register:hover {
-    --var: true;
+    --var: 10px;
 }
 
-.login:hover {
-    --var == true {
-
-    }
+.login * {
+    -webkit-backdrop-filter: blur(--var);
+    backdrop-filter: blur(--var);
 }

@@ -21,10 +21,10 @@
             <img src="resources/zorro.png" class="logo__img">
         </a>
         <ul class="header__main main">
-            <li class="main__section"> <a href="#hero">Inicio</a></li>
-            <li class="main__section"> <a href="#About">Servicios</a></li>
-            <li class="main__section"> <a href="#Cards">Elegirnos</a></li>
-            <li class="main__section"> <a href="#Contact">Contacto</a></li>
+            <li class="main__section"> <a href="index.html">Inicio</a></li>
+            <li class="main__section"> <a href="index.html#About">Servicios</a></li>
+            <li class="main__section"> <a href="index.html#Cards">Elegirnos</a></li>
+            <li class="main__section"> <a href="index.html#Contact">Contacto</a></li>
             <li><a href="login.html" class="main__section--color">Ingresar</a></li>
             <li><a href="login.html" class="main__section--trans">Registrarse</a></li>
         </ul>
@@ -48,10 +48,10 @@
                             </div>
                         </li>
                         <li class="loginTable__questions">
-                            <a class="loginTable__questions--text" href="x">¿no recuerda su contraseña?</a>
-                            <a class="loginTable__questions--text" href="x">¿no está registrado?</a>
+                            <a class="loginTable__questions--text" href="#popup">¿no recuerda su contraseña?</a>
+                            <a class="loginTable__questions--text" href="#popup">¿no está registrado?</a>
                         </li>
-                        <li><button class="login__btnLogIn">Log In</button></li>
+                        <li><a href="#popup" class="login__btnLogIn">Log In</a></li>
                     </ul>
                 </table>
             </div>
@@ -80,9 +80,9 @@
                             </div>
                         </li>
                         <li class="registerTable__questions">
-                            <a class="loginTable__questions--text" href="x">¿ya se encuentra registrado?</a>
+                            <a class="loginTable__questions--text" href="#popup">¿ya se encuentra registrado?</a>
                         </li>
-                        <li><button class="register__btnLogIn">Register</button></li>
+                        <li><a href="#popup" class="register__btnLogIn">Register</a></li>
                     </ul>
                 </table>
             </div>
@@ -101,5 +101,12 @@
             </ul>
         </div>
     </footer>
+    <section id="popup" class="overlay">
+        <ul id="popupBody">
+            <li class="popupBody--row"><a id="cerrar" href="#">&times;</a></li>
+            <li class="popupBody--row"><h2>Proximamente</h2></li>
+            <li class="popupBody--row"><p>Funcionalidad en desarrollo, disculpe las molestias.</p></li>
+        </ul>
+    </section>
 </body>
 </html>

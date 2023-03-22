@@ -5,17 +5,18 @@
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: monospace;
     text-decoration: none;
 }
 
 :root {
-    --c1: #0d192b;
-    --c2: #0c5149;
-    --c3: #0a8967;
-    --c4: #09c184;
-    --c5: #07f9a2;
-    --c6: #fcfef5;
+    --c1: #B8B8D1;
+    --c2: #5B5F97;
+    --c3: #FFC145;
+    --c4: #FFFFFB;
+    --c5: #db5c5d;
+    --c6: #FFFFFB;
+    --c7: black;
     --c-trans: #afb7a0;
     --focus: rgb(255, 255, 87);
     }
@@ -34,7 +35,7 @@
     height: 50px;
     align-items: center;
     justify-content: space-evenly;
-    background: var(--c1);
+    background: var(--c5);
     position: fixed;
     z-index: 1;
 }
@@ -52,7 +53,7 @@
 }
 
 .main__section, .main__section a {
-    font-size: 13px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
     color: var(--c6);
@@ -66,7 +67,7 @@
 
 .main__section--color {
     color: var(--c6);
-    background: var(--c4);
+    background: var(--c2);
 }
 
 .main__section--trans {
@@ -81,8 +82,31 @@
     padding: 5px 15px 5px 15px;
     align-items: center;
     font-weight: 600;
-    border-radius: 10px;
 }
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: baseline;
+        width: 110px;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .header ul { flex-direction: column; gap: 20px;}
+    .header ul li { justify-content: center; }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__section--trans {
+        padding: 5px 5px 5px 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+  }
 
 /********************/
 /*****   HERO   *****/
@@ -92,7 +116,12 @@
     margin-top: 50px;
     width: 100%;
     height: 500px;
-    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(12,81,73,1) 51%);
+    background: radial-gradient(circle, 
+        rgba(45,47,47,1) 0%, 
+        rgba(45,47,47,1) 100%, 
+        rgba(45,47,47,1) 100%, 
+        rgba(170,169,173,1) 100%
+        );    
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -101,6 +130,7 @@
 .hero_block, .block {
     justify-content: space-evenly;
     align-items: center;
+    padding: 20px 0px 20px 0px;
 }
 
 .block__text, .block__img {
@@ -109,7 +139,7 @@
 }
 
 .title, .text {
-    color: var(--c-trans);
+    color: var(--c4);
 }
 
 .title, .OurServices__Title, .PorqueElegirnos__Title {
@@ -121,7 +151,7 @@
 }
 
 .text {
-    line-height: 25px;
+    line-height: 20px;
     padding-bottom: 20px;
 }
 
@@ -129,7 +159,11 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: url(resources/banner.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(resources/banner2.svg);
+    border-radius: 50%;
 }
 
 .button {
@@ -142,10 +176,33 @@
 }
 
 .button__text {
-    color: var(--c1);
+    color: var(--c4);
 }
 
+@media (max-width: 600px) {
+    .hero, .OurServices, .PorqueElegirnos, .Contact {
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 110px;
+        height: auto;
+        align-items: center;
+    }
 
+    .img, .block__img {
+        display: none;
+    }
+
+    .block__text {
+        width: 80%;
+        height: 100%;
+    }
+
+    .title, .text {
+        padding-top: 0px;
+        margin-top: 0px;
+        text-align: center;
+    }
+}
 
 /****************************/
 /*****   Our Services   *****/
@@ -154,7 +211,7 @@
 .OurServices {
     width: 100%;
     height: auto;
-    background-color: var(--c3);
+    background-color: var(--c2);
     justify-content: center;
     padding-bottom: 50px;
 }
@@ -187,7 +244,7 @@
 }
 
 .TestAutomatizado__Title, .TestFuncional__Title, .TestLoadStressPerfomance__Title {
-    background-color: var(--c1);
+    background-color: var(--c5);
     text-transform: uppercase;
     width: 100%;
     padding: 20px;
@@ -214,6 +271,29 @@
     background-size: 100px;
 }
 
+@media (max-width:1240px) {
+    .TestFuncional, .TestLoadStressPerformance { 
+        width: 100%;    
+    }
+}
+
+@media (max-width: 600px) {
+    .OurServices--Inner {
+        height: auto;
+        width: 90%;
+    }
+
+    .TestAutomatizado, .TestFuncional, .TestLoadStressPerformance {
+        width: 100%;
+        height: auto;
+    }
+
+    .TestAutomatizado__Img, .TestFuncional__Img, .TestLoadStressPerfomance__Img {
+        margin: 10px;
+        padding: 0 0 0 0;
+    }
+}
+
 /********************************/
 /*****   PORQUE ELEGIRNOS   *****/
 /********************************/
@@ -221,8 +301,8 @@
 .PorqueElegirnos {
     width: 100%;
     justify-content: center;
-    background: rgb(0,0,0);
-    background: linear-gradient(101deg, rgba(0,0,0,1) 0%, rgba(12,81,73,1) 0%, rgba(13,25,43,1) 100%);    padding-bottom: 50px;
+    background: #161626d1;    
+    padding-bottom: 50px;
 }
 
 .PorqueElegirnos__Inner {
@@ -244,7 +324,7 @@
     flex-direction: row;
     text-align: -webkit-right;
     justify-content: center;
-    background: var(--c1);
+    background: var(--c5);
     border-radius: 10px;
     padding: 20px 10px;
     border: 2px solid white;
@@ -262,7 +342,7 @@
 
 .PEbox__text {
     text-transform: lowercase;
-    color: var(--c-trans);
+    color: var(--c6);
 }
 
 .PEbox__BoxImg, .BoxImg{
@@ -274,23 +354,53 @@
     height: 100px;
 }
 
+
+@media (max-width: 600px) {
+    .PorqueElegirnos__Inner {
+        width: 100%;
+        gap: 20px;
+    }
+}
+
 /************************/
 /*****   CONTACTO   *****/
 /************************/
 
 .contact {
     width: 100%;
-    background: radial-gradient(circle, rgba(12,81,64,1) 2%, rgba(13,25,43,1) 100%);    justify-content: space-evenly;
+    background: var(--c2);
     padding-bottom: 50px;
     padding-top: 40px;
     color: var(--c6);
 }
 
+.Contact--inner {
+    width: 100%;
+    justify-content: space-around;
+}
+
 .contact__colbox, .colbox, .form {
-    width: 25%;
+    width: 100%;
     height: auto;
 }
 
+@media (max-width: 600px) {
+    .contact {
+        padding-left: 110px;
+    }
+    .contact__colbox {
+        width: 100%;
+    }
+
+    .Contact--inner {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .colbox_map {
+        display: none;
+    }
+}
 /******************************/
 /*****   CONTACTO - FORM  *****/
 /******************************/
@@ -330,7 +440,7 @@
 .FormBox__button {
     width: 100%;
     border-radius: 10px;
-    background: var(--c1);
+    background: var(--c5);
     color: var(--c6);
     justify-content: center;
     padding: 5px;
@@ -379,7 +489,7 @@
 .footer {
     width: 100%;
     height: 50px;
-    background: var(--c1);
+    background: var(--c7);
     justify-content: center;
     align-content: center;
 }
@@ -407,6 +517,12 @@
     gap: 5px;
 }
 
+@media (max-width: 600px)  {
+    .footer {
+        z-index: 1;
+    }
+}
+
 /*********************************/
 /*****   LOGIN AND REGISTER  *****/
 /*********************************/
@@ -414,8 +530,7 @@
 .loginRegister {
     justify-content: space-evenly;
     align-items: center;
-    /* background: var(--c2); */
-    background-image: url(resources/nebulosa.jpg);
+    background: #161626d1;
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -442,11 +557,11 @@
 }
 
 .register {
-    background: var(--c3);
+    background: var(--c2);
 }
 
 .login {
-    background: var(--c1);
+    background: #00000069;
     color: var(--c6);
     border: 2px solid var(--c4);
 }
@@ -520,6 +635,56 @@
     align-items: center;
     height: 20px;
     background: var(--c5);
-    color: var(--c1);
+    color: var(--c6);
     font-weight: bold;
+}
+
+/**********************/
+/*****   POP-UP   *****/
+/**********************/
+
+.overlay { 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+#popupBody {
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    margin: 20% auto;
+    transition: all 5s ease-in-out;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popupBody--row {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+#cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+    transition: all 200ms;
 }
