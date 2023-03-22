@@ -16,97 +16,102 @@
         referrerpolicy="no-referrer" 
     /></head>
 <body class="page">
-    <header id="header" class="header">
-        <a href="" class="header__logo logo"> 
-            <img src="resources/zorro.png" class="logo__img">
-        </a>
-        <ul class="header__main main">
-            <li class="main__section"> <a href="index.html">Inicio</a></li>
-            <li class="main__section"> <a href="index.html#About">Servicios</a></li>
-            <li class="main__section"> <a href="index.html#Cards">Elegirnos</a></li>
-            <li class="main__section"> <a href="index.html#Contact">Contacto</a></li>
-            <li><a href="login.html" class="main__section--color">Ingresar</a></li>
-            <li><a href="login.html" class="main__section--trans">Registrarse</a></li>
-        </ul>
-    </header>
-    <section class="loginRegister">
-        <section id="Login" class="login">
-            <div class="login__inner">
-                <table class="login__table loginTable">
-                    <ul class="loginTable__Inner">
-                        <li><h2 class="login__Title"> Iniciar Sesion</h2></li>
-                        <li class="text-email">
-                            <div class="text-email__container">
-                                <i class="fa-solid fa-user"></i>
-                                <input class="text-email__txt" type="mail" placeholder="your email" required></input>
-                            </div>
-                        </li>
-                        <li class="text-password">
-                            <div class="text-password__container">
-                                <i class="fa-solid fa-lock"></i>
-                                <input class="text-password__txt" type="password" placeholder="your password" required></input>
-                            </div>
-                        </li>
-                        <li class="loginTable__questions">
-                            <a class="loginTable__questions--text" href="#popup">¿no recuerda su contraseña?</a>
-                            <a class="loginTable__questions--text" href="#popup">¿no está registrado?</a>
-                        </li>
-                        <li><a href="#popup" class="login__btnLogIn">Log In</a></li>
-                    </ul>
-                </table>
-            </div>
-        </section>
-        <section id="Register" class="register">           
-            <div class="register__inner">
-                <table class="register__table registerTable">
-                    <ul class="registerTable__Inner">
-                        <li><h2 class="register__Title"> Registrarse </h2></li>
-                        <li class="text-email">
-                            <div class="text-email__container">
-                                <i class="fa-solid fa-user"></i>
-                                <input class="text-email__txt" type="mail" placeholder="your email" required></input>
-                            </div>
-                        </li>
-                        <li class="text-password">
-                            <div class="text-password__container">
-                                <i class="fa-solid fa-key"></i>
-                                <input class="text-password__txt" type="password" placeholder="your password" required></input>
-                            </div>
-                        </li>
-                        <li class="text-password">
-                            <div class="text-password__container">
-                                <i class="fa-solid fa-key"></i>
-                                <input class="text-password__txt" type="password" placeholder="your password repeat" required></input>
-                            </div>
-                        </li>
-                        <li class="registerTable__questions">
-                            <a class="loginTable__questions--text" href="#popup">¿ya se encuentra registrado?</a>
-                        </li>
-                        <li><a href="#popup" class="register__btnLogIn">Register</a></li>
-                    </ul>
-                </table>
-            </div>
-        </section>
-    </section>
-    <footer class="footer">
-        <div class="footer__inner">
-            <ul class="footer__tabla">
-                <li class="tabla__renglon">
-                    <p class="footer__text">Hecho con ❤️ Por</p> 
-                    <a class="footer__text" href="https://www.linkedin.com/in/abelangel96/">Abel A. Cejas</a> 
-                </li>
-                <li class="tabla__renglon">
-                    <a class="footer__text" href="https://www.flaticon.com/free-icons/criteria" title="criteria icons">Criteria icons created by Eucalyp - Flaticon</a>
-                </li>
+    <div class="page__inner">
+        <a id="toggleMenu" href="#popup" class="header--toggleMenu">
+            <i class="fa-solid fa-bars"></i>
+        </a>              
+        <header id="header" class="header">
+            <a href="" class="header__logo logo"> 
+                <img src="resources/zorro.png" class="logo__img">
+            </a>
+            <ul class="header__main main">
+                <li class="main__section"> <a href="index.html">Inicio</a></li>
+                <li class="main__section"> <a href="index.html#About">Servicios</a></li>
+                <li class="main__section"> <a href="index.html#Cards">Elegirnos</a></li>
+                <li class="main__section"> <a href="index.html#Contact">Contacto</a></li>
+                <li><a href="login.html" class="main__section--color">Ingresar</a></li>
+                <li><a href="login.html" class="main__section--trans">Registrarse</a></li>
             </ul>
-        </div>
-    </footer>
-    <section id="popup" class="overlay">
-        <ul id="popupBody">
-            <li class="popupBody--row"><a id="cerrar" href="#">&times;</a></li>
-            <li class="popupBody--row"><h2>Proximamente</h2></li>
-            <li class="popupBody--row"><p>Funcionalidad en desarrollo, disculpe las molestias.</p></li>
-        </ul>
-    </section>
+        </header>
+        <section class="loginRegister">
+            <section id="Login" class="login">
+                <div class="login__inner">
+                    <table class="login__table loginTable">
+                        <ul class="loginTable__Inner">
+                            <li><h2 class="login__Title"> Iniciar Sesion</h2></li>
+                            <li class="text-email">
+                                <div class="text-email__container">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input class="text-email__txt" type="mail" placeholder="your email" required></input>
+                                </div>
+                            </li>
+                            <li class="text-password">
+                                <div class="text-password__container">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input class="text-password__txt" type="password" placeholder="your password" required></input>
+                                </div>
+                            </li>
+                            <li class="loginTable__questions">
+                                <a class="loginTable__questions--text" href="#popup">¿no recuerda su contraseña?</a>
+                                <a class="loginTable__questions--text" href="#popup">¿no está registrado?</a>
+                            </li>
+                            <li><a href="#popup" class="login__btnLogIn">Log In</a></li>
+                        </ul>
+                    </table>
+                </div>
+            </section>
+            <section id="Register" class="register">           
+                <div class="register__inner">
+                    <table class="register__table registerTable">
+                        <ul class="registerTable__Inner">
+                            <li><h2 class="register__Title"> Registrarse </h2></li>
+                            <li class="text-email">
+                                <div class="text-email__container">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input class="text-email__txt" type="mail" placeholder="your email" required></input>
+                                </div>
+                            </li>
+                            <li class="text-password">
+                                <div class="text-password__container">
+                                    <i class="fa-solid fa-key"></i>
+                                    <input class="text-password__txt" type="password" placeholder="your password" required></input>
+                                </div>
+                            </li>
+                            <li class="text-password">
+                                <div class="text-password__container">
+                                    <i class="fa-solid fa-key"></i>
+                                    <input class="text-password__txt" type="password" placeholder="your password repeat" required></input>
+                                </div>
+                            </li>
+                            <li class="registerTable__questions">
+                                <a class="loginTable__questions--text" href="#popup">¿ya se encuentra registrado?</a>
+                            </li>
+                            <li><a href="#popup" class="register__btnLogIn">Register</a></li>
+                        </ul>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <footer class="footer">
+            <div class="footer__inner">
+                <ul class="footer__tabla">
+                    <li class="tabla__renglon">
+                        <p class="footer__text">Hecho con ❤️ Por</p> 
+                        <a class="footer__text" href="https://www.linkedin.com/in/abelangel96/">Abel A. Cejas</a> 
+                    </li>
+                    <li class="tabla__renglon">
+                        <a class="footer__text" href="https://www.flaticon.com/free-icons/criteria" title="criteria icons">Criteria icons created by Eucalyp - Flaticon</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <section id="popup" class="overlay">
+            <ul id="popupBody">
+                <li class="popupBody--row"><a id="cerrar" href="#">&times;</a></li>
+                <li class="popupBody--row"><h2>Proximamente</h2></li>
+                <li class="popupBody--row"><p>Funcionalidad en desarrollo, disculpe las molestias.</p></li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>

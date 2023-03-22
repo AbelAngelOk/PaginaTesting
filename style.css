@@ -17,7 +17,7 @@
     --c5: #db5c5d;
     --c6: #FFFFFB;
     --c7: black;
-    --c-trans: #afb7a0;
+    --c-trans: #b8b8d154;
     --focus: rgb(255, 255, 87);
     }
 
@@ -26,6 +26,17 @@
     height: auto;
 }
 
+@media (min-width:1700px) {
+    .page {
+        justify-content: center;
+    }
+
+    .page__inner, #header {
+        width: 1700px;
+    }
+
+
+}
 /**********************/
 /*****   HEADER   *****/
 /**********************/
@@ -38,6 +49,42 @@
     background: var(--c5);
     position: fixed;
     z-index: 1;
+    box-shadow: 0 8px 24px black;
+}
+
+#toggleMenu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    left: 2%;
+    top: 2%;
+}
+
+.header--toggleMenu {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c6);
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        display: none;
+    }
+
+    #toggleMenu {
+        position: fixed;
+        display: flex;
+        z-index: 1;
+    }
+
+    #toggleMenu:checked ~ .header {
+        width: 90px;
+        height: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .logo, .logo__img {
@@ -84,36 +131,11 @@
     font-weight: 600;
 }
 
-@media (max-width: 600px) {
-    .header {
-        flex-direction: column;
-        align-items: baseline;
-        width: 110px;
-        height: 100%;
-        z-index: 0;
-    }
-
-    .header ul { flex-direction: column; gap: 20px;}
-    .header ul li { justify-content: center; }
-
-    .main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main__section--trans {
-        padding: 5px 5px 5px 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-  }
-
 /********************/
 /*****   HERO   *****/
 /********************/
 
 .hero {
-    margin-top: 50px;
     width: 100%;
     height: 500px;
     background: radial-gradient(circle, 
@@ -125,6 +147,12 @@
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+}
+
+@media (min-width: 800px) {
+    .hero {
+        margin-top: 50px;
+    }
 }
 
 .hero_block, .block {
@@ -182,8 +210,6 @@
 @media (max-width: 600px) {
     .hero, .OurServices, .PorqueElegirnos, .Contact {
         flex-direction: column;
-        margin-top: 0px;
-        margin-left: 110px;
         height: auto;
         align-items: center;
     }
@@ -305,10 +331,23 @@
     padding-bottom: 50px;
 }
 
-.PorqueElegirnos__Inner {
+.PorqueElegirnos__Inner, .PorqueElegirnos__InnerBlocks {
     width: 80%;
     justify-content: space-evenly;
     text-align: center;
+}
+
+@media (max-width: 1500px) {
+    .PorqueElegirnos__InnerBlocks {
+        justify-content: center;
+        gap: 50px;
+    } 
+
+    .PorqueElegirnos__Inner {
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 .PorqueElegirnos__Title {
@@ -384,23 +423,19 @@
     height: auto;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width:1130px) {
     .contact {
-        padding-left: 110px;
-    }
-    .contact__colbox {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
     .Contact--inner {
-        gap: 20px;
-        justify-content: center;
-    }
-
-    .colbox_map {
-        display: none;
+        width: 50%;
+        gap: 50px;
     }
 }
+
 /******************************/
 /*****   CONTACTO - FORM  *****/
 /******************************/
@@ -457,6 +492,12 @@
 
 .colbox_map {
     align-items: center;
+}
+
+@media (max-width:400px) {
+    .colbox_map {
+        display: none;
+    }
 }
 
 /******************************/
@@ -538,6 +579,13 @@
     height: 660px;
 }
 
+@media (max-width: 780px) {
+    .loginRegister {
+        flex-direction: column;
+    }
+
+}
+
 .login__Title, .register__Title {
     width: 100%;
     border-radius: 10px;
@@ -613,7 +661,7 @@
 
 .text-email__txt,
 .text-password__txt {
-    width: 400px;
+    width: 80%;
 }
 
 .loginTable__questions, .registerTable__questions {
@@ -639,6 +687,17 @@
     font-weight: bold;
 }
 
+@media (max-width:600px) {
+    .login__btnLogIn, .register__btnLogIn  {
+        height: 40px;
+        width: 40%;
+    }
+
+    .register, .login {
+        width: 90%;
+        height: auto;
+    }
+}
 /**********************/
 /*****   POP-UP   *****/
 /**********************/
@@ -687,4 +746,11 @@
     text-decoration: none;
     color: #F00;
     transition: all 200ms;
+}
+
+@media (max-width: 600px)  {
+    #popupBody {
+        padding: 2% 8%;
+	    height: 90px;
+    }
 }
