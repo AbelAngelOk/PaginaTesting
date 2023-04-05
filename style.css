@@ -26,13 +26,13 @@
     height: auto;
 }
 
-@media (min-width:1700px) {
+@media (min-width:1920px) {
     .page {
         justify-content: center;
     }
 
     .page__inner, #header {
-        width: 1700px;
+        width: 1920px;
     }
 
 
@@ -52,39 +52,56 @@
     box-shadow: 0 8px 24px black;
 }
 
-#toggleMenu {
+.header--toggleMenu {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    left: 2%;
-    top: 2%;
-}
-
-.header--toggleMenu {
+    left: 40px;
+    bottom: 40px;
     justify-content: center;
     align-items: center;
     background-color: var(--c6);
     display: none;
 }
 
+#toggleMenu {
+    display: none;
+}
+
 @media (max-width: 800px) {
 
     .header {
-        display: none;
+        display: flex;
+        width: 130px;
+        height: 100%;
+        gap: 10px;
+        z-index: 1;
+        align-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    #toggleMenu {
+    .main {
+        flex-direction: column;
+    }
+
+    .header--toggleMenu {
         position: fixed;
         display: flex;
-        z-index: 1;
+        z-index: 2;
     }
 
-    #toggleMenu:checked ~ .header {
-        width: 90px;
-        height: 100%;
-        flex-direction: column;
-        gap: 10px;
-    }
+    
+    #toggleMenu:checked ~ .header{
+        display: none;
+    } 
+
+    #toggleMenu:checked ~ .header{
+        animation-duration: 3s;
+    } 
+    
+
 }
 
 .logo, .logo__img {
@@ -344,7 +361,7 @@
     } 
 
     .PorqueElegirnos__Inner {
-        width: 80%;
+        width: 100%;
         justify-content: center;
         text-align: center;
     }
